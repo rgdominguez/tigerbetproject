@@ -78,6 +78,11 @@ class DefaultController extends Controller
         return $this->redirect("/inicio");
     }
 
+    public function logOutAction(){
+        $this->get('session')->remove('usuario');
+        return $this->redirect('/inicio');
+    }
+
 
     public function registroAction(Request $request)
     {

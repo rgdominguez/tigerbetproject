@@ -89,6 +89,8 @@
                 dataType: "json",
                 success: function(response) {
                     $('#disponible').val(response.total_acumulado);
+                    jugar.style.pointerEvents = 'auto';
+                    jugar.style.backgroundColor = '#3bd23b';
                 },
                 error: function(e){
                     swal({
@@ -99,6 +101,8 @@
                     });
                 }
             });
+        }else{
+
         }
     }
 
@@ -197,7 +201,12 @@
             slotsimg[1].setAttribute('alt' , slots_2[number]);
             slotsimg[2].setAttribute('alt' , slots_3[number]);
             number++;
+
+            jugar.style.pointerEvents = 'auto';
+            jugar.style.backgroundColor = '#3bd23b';
         }
+
+
     }
 
 

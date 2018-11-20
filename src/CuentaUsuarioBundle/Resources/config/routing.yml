@@ -12,3 +12,6 @@ registro_usuario:
 error_homepage:
     path:     /error
     defaults: { _controller: CuentaUsuarioBundle:Default:error }
+logout_homepage:
+    path:     /logout-usuario
+    defaults: { _controller: CuentaUsuarioBundle:Default:logOut }

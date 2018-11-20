@@ -10,7 +10,6 @@ class DefaultController extends Controller
 {
     public function indexAction()
     {
-        //recogemos el repositorio desde la clase Categoria
         $repositorio_subcategorias = $this->getDoctrine()->getRepository(Subcategoria::class);
         $subcategorias = $repositorio_subcategorias->findAll();
 
@@ -21,11 +20,6 @@ class DefaultController extends Controller
             ->getQuery();
         $noticias = $query_noticias->getResult();
 
-        //Borrar sesión
-        //$this->get('session')->remove('usuario');
-        //var_dump($this->get('session')->has('usuario'));
-
-        //Renderización de vista y paso de parámetros
         return $this->render('index/index.html.twig', [
             'subcategorias' => $subcategorias,
             'noticias'      => $noticias

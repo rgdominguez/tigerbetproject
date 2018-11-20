@@ -1,20 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/web/js/tragaperras.script.js" description="document.addEventListener('DOMContentLoaded', func..." line="270" />
+    <bookmark url="file://$PROJECT_DIR$/web/js/tragaperras.script.js" description="document.addEventListener('DOMContentLoaded', func..." line="279" />
     <bookmark url="file://$PROJECT_DIR$/src/ApuestasBundle/Controller/DefaultController.php" description="$params['email']" line="10" />
     <bookmark url="file://$PROJECT_DIR$/src/ApuestasBundle/Controller/DefaultController.php" description="        if ($request-&gt;isXmlHttpRequest()) {" line="11" />
     <bookmark url="file://$PROJECT_DIR$/src/CuentaUsuarioBundle/Resources/config/routing.yml" description="registro_usuario:&#10;    path:     /registro-usuario&#10;..." line="7" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1ecccddd-8899-4ee9-bc3f-c1ff6ec721bd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/web/js/headermenu.script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/views/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/views/base.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/views/index/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/views/index/index.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/css/header.style.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/css/header.style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Resources/views/index/block.popup.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/views/index/block.popup.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CuentaUsuarioBundle/Controller/DefaultController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/CuentaUsuarioBundle/Controller/DefaultController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CuentaUsuarioBundle/Resources/config/routing.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/CuentaUsuarioBundle/Resources/config/routing.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/IndexBundle/Controller/DefaultController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/IndexBundle/Controller/DefaultController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/css/popup.style.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/css/popup.style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/css/responsive.style.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/css/responsive.style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/js/tragaperras.script.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/js/tragaperras.script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/js/user.script.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/js/user.script.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/vendor/composer/" />
     <ignored path="$PROJECT_DIR$/vendor/doctrine/annotations/" />
@@ -136,72 +137,56 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="console" value="1" />
-          <entry key="css" value="2" />
+          <entry key="css" value="5" />
           <entry key="dist" value="1" />
-          <entry key="js" value="1" />
+          <entry key="js" value="4" />
           <entry key="json" value="1" />
-          <entry key="php" value="2" />
+          <entry key="php" value="4" />
           <entry key="symfony_requirements" value="1" />
           <entry key="ts" value="1" />
-          <entry key="twig" value="3" />
-          <entry key="yml" value="3" />
+          <entry key="twig" value="4" />
+          <entry key="yml" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CSS" value="2" />
+          <entry key="CSS" value="5" />
           <entry key="JSON" value="1" />
-          <entry key="JavaScript" value="1" />
-          <entry key="PHP" value="4" />
+          <entry key="JavaScript" value="4" />
+          <entry key="PHP" value="6" />
           <entry key="PLAIN_TEXT" value="1" />
-          <entry key="Twig" value="3" />
+          <entry key="Twig" value="4" />
           <entry key="TypeScript" value="1" />
-          <entry key="YAML" value="3" />
+          <entry key="YAML" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="css" value="260" />
-          <entry key="js" value="472" />
-          <entry key="twig" value="196" />
-          <entry key="yml" value="39" />
+          <entry key="css" value="339" />
+          <entry key="js" value="997" />
+          <entry key="php" value="62" />
+          <entry key="twig" value="227" />
+          <entry key="yml" value="48" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CSS" value="260" />
-          <entry key="JavaScript" value="472" />
-          <entry key="Twig" value="196" />
-          <entry key="YAML" value="39" />
+          <entry key="CSS" value="339" />
+          <entry key="JavaScript" value="997" />
+          <entry key="PHP" value="62" />
+          <entry key="Twig" value="227" />
+          <entry key="YAML" value="48" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="307">
-              <caret line="124" column="36" selection-start-line="124" selection-start-column="36" selection-end-line="124" selection-end-column="36" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/js/headermenu.script.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="55" selection-start-line="4" selection-start-column="55" selection-end-line="4" selection-end-column="55" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/web/css/header.style.css">
+        <entry file="file://$PROJECT_DIR$/web/js/tragaperras.script.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="20" column="34" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="34" />
+            <state relative-caret-position="370">
+              <caret line="94" column="33" lean-forward="true" selection-start-line="94" selection-start-column="33" selection-end-line="94" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -241,6 +226,8 @@
       <find>section#nba .container figure</find>
       <find>0px 30px</find>
       <find>header div#rrss .login</find>
+      <find>.inner-form</find>
+      <find>pointer</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -263,33 +250,25 @@
         <option value="$PROJECT_DIR$/src/ContactoBundle/Resources/config/routing.yml" />
         <option value="$PROJECT_DIR$/src/ContactoBundle/Controller/DefaultController.php" />
         <option value="$PROJECT_DIR$/web/js/form.script.js" />
-        <option value="$PROJECT_DIR$/web/css/popup.style.css" />
         <option value="$PROJECT_DIR$/web/js/init.script.js" />
         <option value="$PROJECT_DIR$/app/Resources/views/index/block.secciones.html.twig" />
         <option value="$PROJECT_DIR$/web/js/popup.script.js" />
-        <option value="$PROJECT_DIR$/app/Resources/views/index/block.popup.twig" />
         <option value="$PROJECT_DIR$/app/Resources/views/casino/casino.html.twig" />
-        <option value="$PROJECT_DIR$/web/js/user.script.js" />
         <option value="$PROJECT_DIR$/app/Resources/views/casino/otrosjuegos.html.twig" />
         <option value="$PROJECT_DIR$/app/Resources/views/casino/game.html.twig" />
         <option value="$PROJECT_DIR$/app/Resources/views/casino/tragaperras.html.twig" />
         <option value="$PROJECT_DIR$/src/ApuestasBundle/Helpers/recogerCategorias.php" />
         <option value="$PROJECT_DIR$/src/ApuestasBundle/Resources/config/routing.yml" />
-        <option value="$PROJECT_DIR$/web/js/tragaperras.script.js" />
         <option value="$PROJECT_DIR$/src/CuentaUsuarioBundle/Repository/CuentaUsuario/CuentaUsuarioRepository.php" />
         <option value="$PROJECT_DIR$/src/ApuestasBundle/Controller/DefaultController.php" />
         <option value="$PROJECT_DIR$/app/Resources/views/sidebar.html.twig" />
-        <option value="$PROJECT_DIR$/src/CuentaUsuarioBundle/Resources/config/routing.yml" />
         <option value="$PROJECT_DIR$/src/DeportesBundle/Controller/DefaultController.php" />
         <option value="$PROJECT_DIR$/src/CasinoBundle/Controller/DefaultController.php" />
         <option value="$PROJECT_DIR$/app/Resources/views/404.html.twig" />
-        <option value="$PROJECT_DIR$/src/IndexBundle/Controller/DefaultController.php" />
         <option value="$PROJECT_DIR$/app/Resources/views/index/block.nba.html.twig" />
         <option value="$PROJECT_DIR$/web/css/index.style.css" />
         <option value="$PROJECT_DIR$/web/css/contacto.style.css" />
         <option value="$PROJECT_DIR$/app/Resources/views/menumobile.html.twig" />
-        <option value="$PROJECT_DIR$/web/css/responsive.style.css" />
-        <option value="$PROJECT_DIR$/src/CuentaUsuarioBundle/Controller/DefaultController.php" />
         <option value="$PROJECT_DIR$/app/Resources/views/micuenta/table.html.twig" />
         <option value="$PROJECT_DIR$/app/Resources/views/micuenta/paypal.html.twig" />
         <option value="$PROJECT_DIR$/app/Resources/views/micuenta/micuenta.html.twig" />
@@ -300,6 +279,14 @@
         <option value="$PROJECT_DIR$/app/Resources/views/base.html.twig" />
         <option value="$PROJECT_DIR$/web/js/headermenu.script.js" />
         <option value="$PROJECT_DIR$/web/css/header.style.css" />
+        <option value="$PROJECT_DIR$/src/IndexBundle/Controller/DefaultController.php" />
+        <option value="$PROJECT_DIR$/src/CuentaUsuarioBundle/Controller/DefaultController.php" />
+        <option value="$PROJECT_DIR$/src/CuentaUsuarioBundle/Resources/config/routing.yml" />
+        <option value="$PROJECT_DIR$/app/Resources/views/index/block.popup.twig" />
+        <option value="$PROJECT_DIR$/web/js/user.script.js" />
+        <option value="$PROJECT_DIR$/web/css/popup.style.css" />
+        <option value="$PROJECT_DIR$/web/css/responsive.style.css" />
+        <option value="$PROJECT_DIR$/web/js/tragaperras.script.js" />
       </list>
     </option>
   </component>
@@ -384,31 +371,13 @@
             <path>
               <item name="tigerbetproject" type="b2602c69:ProjectViewProjectNode" />
               <item name="tigerbetproject" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tigerbetproject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tigerbetproject" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="IndexBundle" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tigerbetproject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tigerbetproject" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="IndexBundle" type="462c0819:PsiDirectoryNode" />
-              <item name="Controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tigerbetproject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tigerbetproject" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="tigerbetproject" type="b2602c69:ProjectViewProjectNode" />
               <item name="tigerbetproject" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -452,12 +421,12 @@
       <workItem from="1542532902603" duration="26698000" />
       <workItem from="1542577253134" duration="26000" />
       <workItem from="1542744641430" duration="1177000" />
-      <workItem from="1542746977732" duration="2287000" />
+      <workItem from="1542746977732" duration="4607000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="120407000" />
+    <option name="totallyTimeSpent" value="122727000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -485,7 +454,7 @@
       <window_info anchor="right" id="Database" order="3" />
     </layout>
     <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25718608" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.30711043" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -519,41 +488,6 @@
     </ignored-roots>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/casino/otrosjuegos.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="10" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/casino/casino.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="36" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/casino/game.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="28" lean-forward="true" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/popup.script.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-852">
-          <caret line="11" column="67" selection-start-line="11" selection-start-column="67" selection-end-line="11" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/user.script.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="346">
-          <caret line="23" column="15" lean-forward="true" selection-start-line="5" selection-start-column="7" selection-end-line="23" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Resources/views/casino/tragaperras.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
@@ -583,13 +517,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="63" selection-start-line="5" selection-start-column="63" selection-end-line="5" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/tragaperras.script.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="27" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="27" />
         </state>
       </provider>
     </entry>
@@ -703,13 +630,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/css/responsive.style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="469">
-          <caret line="147" column="47" selection-start-line="147" selection-start-column="47" selection-end-line="147" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Resources/views/index/block.nba.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -718,24 +638,10 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Resources/views/menumobile.html.twig" />
-    <entry file="file://$PROJECT_DIR$/src/CuentaUsuarioBundle/Resources/config/routing.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Resources/views/micuenta/table.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="34" selection-start-line="4" selection-start-column="34" selection-end-line="4" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/CuentaUsuarioBundle/Controller/DefaultController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="38" column="51" selection-start-line="38" selection-start-column="43" selection-end-line="38" selection-end-column="51" />
         </state>
       </provider>
     </entry>
@@ -779,13 +685,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/IndexBundle/Controller/DefaultController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="24" column="10" selection-start-line="24" selection-start-column="10" selection-end-line="24" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/bin/console">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -799,17 +698,45 @@
     <entry file="file://$PROJECT_DIR$/app/config/config_prod.yml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
-          <caret line="124" column="36" selection-start-line="124" selection-start-column="36" selection-end-line="124" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.dom.d.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="17064" column="12" selection-start-line="17064" selection-start-column="12" selection-end-line="17064" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/IndexBundle/Controller/DefaultController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/IndexBundle/Resources/config/routing.yml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CuentaUsuarioBundle/Controller/DefaultController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="82" column="42" selection-start-line="82" selection-start-column="42" selection-end-line="82" selection-end-column="42" />
+          <folding>
+            <element signature="e#50#84#0#PHP" expanded="true" />
+            <element signature="e#1383#1412#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CuentaUsuarioBundle/Resources/config/routing.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="63" selection-start-line="16" selection-start-column="63" selection-end-line="16" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/css/header.style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="20" column="34" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="34" />
         </state>
       </provider>
     </entry>
@@ -820,10 +747,52 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/css/header.style.css">
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="20" column="34" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="34" />
+        <state relative-caret-position="352">
+          <caret line="55" column="70" selection-start-line="55" selection-start-column="55" selection-end-line="55" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/css/responsive.style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="812">
+          <caret line="93" column="19" selection-start-line="93" selection-start-column="19" selection-end-line="93" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/index/block.popup.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" column="50" selection-start-line="27" selection-start-column="41" selection-end-line="27" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/form.script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="383">
+          <caret line="59" column="30" selection-start-line="59" selection-start-column="30" selection-end-line="59" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/css/popup.style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/user.script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="188">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/tragaperras.script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="370">
+          <caret line="94" column="33" lean-forward="true" selection-start-line="94" selection-start-column="33" selection-end-line="94" selection-end-column="33" />
         </state>
       </provider>
     </entry>

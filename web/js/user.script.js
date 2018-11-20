@@ -2,11 +2,29 @@
 
 (function(d, USER){
 
+        USER.EMAILPATTERN = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+
+    function valEmail(email) {
+        if(!USER.EMAILPATTERN.test(email.trim())){
+            return false;
+        }
+        return true;
+    }
+
+
     function getLoginResponse(params){
         let login_form = {
             'email' : params[0],
             'password'  : params[1]
         };
+
+
+        if(!valEmail($('#lemail').val())){
+            $('#lemail').val('');
+            $('#lemail').focus();
+            $('#lemail+p').text('Introduce un email válido');
+            return;
+        }
 
         $.ajax({
             type: "POST",
@@ -15,10 +33,20 @@
             dataType: "json",
             success: function(response) {
                 console.log(response);
-                redirect();
+                if(response.data == 'ko'){
+                    $('.align-centrado.msg-error').text('Usuario o password incorrectos');
+                    $('#lemail').val('');
+                    $('#lpassword').val('');
+                    $('#lemail').focus();
+                }else{
+                    $('.align-centrado.msg-error').css({'color': 'green'});
+                    $('.align-centrado.msg-error').text('Bienvenido. Redirigiendo...');
+                    window.location = 'http://localhost:8000/inicio';
+                }
+
             },
             error: function(e){
-                console.log('error');
+                alert('error');
             }
         });
         return;
