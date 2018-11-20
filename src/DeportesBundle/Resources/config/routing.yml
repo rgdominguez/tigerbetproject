@@ -1,0 +1,3 @@
+deportes_homepage:
+    path:     /deportes
+    defaults: { _controller: DeportesBundle:Default:index }

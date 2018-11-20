@@ -1,0 +1,36 @@
+<!-- IR A JUEGOS -->
+<section id="juegos">
+
+
+    {% set misesion = app.session.get('usuario') %}
+    {%  set session_class = '' %}
+
+
+    <div class="wrapper">
+        <div class="grid3">
+
+            {% for subcategoria in subcategorias %}
+                <div class="col1-33 col-flex">
+                    <figure>
+                        <img src="{{ subcategoria.getImagen() }}" alt="{{ subcategoria.getImagen() }}">
+                    </figure>
+                    <br>
+                    <h3 class="azul">
+                        {{ subcategoria.getNombre() | upper }}
+                    </h3>
+                    <br>
+                    <p class="azul align-centrado">
+                        {{ subcategoria.getDescripcion() }}
+                    </p>
+                    <br>
+                    {% if misesion is empty %}
+                        <a class="button desactivado" href="javascript:void(0)">Regístrate para acceder</a>
+                    {% else %}
+                        <a class="button" href="/{{ subcategoria.getNombre()}}">ENTRAR</a>
+                    {% endif %}
+                </div>
+            {% endfor %}
+
+        </div>
+    </div>
+</section>

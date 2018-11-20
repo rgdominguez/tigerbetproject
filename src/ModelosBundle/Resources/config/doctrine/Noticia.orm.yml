@@ -1,0 +1,64 @@
+ModelosBundle\Entity\Noticia:
+    type: entity
+    table: noticia
+    indexes:
+        id_subcategoria:
+            columns:
+                - id_subcategoria
+    id:
+        id:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        idSubcategoria:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+            column: id_subcategoria
+        slug:
+            type: string
+            nullable: false
+            length: 50
+            options:
+                fixed: false
+        titular:
+            type: string
+            nullable: false
+            length: 50
+            options:
+                fixed: false
+        extracto:
+            type: string
+            nullable: false
+            length: 150
+            options:
+                fixed: false
+        contenido:
+            type: text
+            nullable: true
+            length: 65535
+            options:
+                fixed: false
+        fechaPublicacion:
+            type: date
+            nullable: true
+            column: fecha_publicacion
+        imagen:
+            type: string
+            nullable: true
+            length: 50
+            options:
+                fixed: false
+        galeria:
+            type: string
+            nullable: true
+            length: 255
+            options:
+                fixed: false
+    lifecycleCallbacks: {  }

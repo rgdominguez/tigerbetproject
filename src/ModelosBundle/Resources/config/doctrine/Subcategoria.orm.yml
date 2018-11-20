@@ -1,0 +1,47 @@
+ModelosBundle\Entity\Subcategoria:
+    type: entity
+    table: subcategoria
+    indexes:
+        id_categoria:
+            columns:
+                - id_categoria
+    id:
+        id:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        nombre:
+            type: string
+            nullable: false
+            length: 50
+            options:
+                fixed: false
+        descripcion:
+            type: string
+            nullable: false
+            length: 255
+            options:
+                fixed: false
+        imagen:
+            type: string
+            nullable: false
+            length: 100
+            options:
+                fixed: false
+    manyToOne:
+        idCategoria:
+            targetEntity: Categoria
+            cascade: {  }
+            fetch: LAZY
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                id_categoria:
+                    referencedColumnName: id
+            orphanRemoval: false
+    lifecycleCallbacks: {  }

@@ -1,0 +1,82 @@
+<div id="admin-popup">
+    <div class="wrapper">
+
+        <div class="inner-form">
+
+            <!-- FORMULARIO DE LOGIN -->
+            <form class="show" action="" method="post" name="login">
+                <figure>
+                    <img src="http://localhost/tigerbet/theme/img/logo.png" alt="">
+                </figure>
+                <h3>LOGIN</h3>
+
+                <div class="field">
+                    <label for="lemail"></label>
+                    <input id="lemail" type="text" placeholder="email" required>
+                    <p class="small error"></p>
+                </div>
+
+                <div class="field">
+                    <label for="password"></label>
+                    <input id="lpassword" type="password" placeholder="password">
+                    <p class="small error"></p>
+                </div>
+
+                <div class="submit">
+                    <input class="form-submit" type="submit" value="ENTRAR">
+                </div>
+
+                <div class="field">
+                    <p>¿Aún no tienes cuenta? <a id="change2registro" href="javascript:void(0)">Regístrate</a></p>
+                </div>
+
+                <div class="field">
+                    <p><a class="popup-cerrar" href="javascript:void(0)">CERRAR</a></p>
+                </div>
+            </form>
+
+            <!-- FORMULARIO DE REGISTRO -->
+            <form action="" class="hide" method="post" name="registro">
+                <figure>
+                    <img src="http://localhost/tigerbet/theme/img/logo.png" alt="">
+                </figure>
+                <h3>REGISTRO</h3>
+                <div class="field">
+                    <label for="nombre"></label>
+                    <input id="nombre" type="text" placeholder="Nombre de usuario" required>
+                    <p class="small error"></p>
+                </div>
+
+                <div class="field">
+                    <label for="remail"></label>
+                    <input id="remail" type="text" placeholder="Email" required>
+                    <p class="small error"></p>
+                </div>
+
+                <div class="field">
+                    <label for="rpassword"></label>
+                    <input id="rpassword" type="password" placeholder="Password">
+                    <p class="small error"></p>
+                </div>
+
+                <div class="field">
+                    <label for="rpassword2"></label>
+                    <input id="rpassword2" type="password" placeholder="Repite password">
+                    <p class="small error"></p>
+                </div>
+
+                <div class="submit">
+                    <input class="form-submit" type="submit" value="DARME DE ALTA">
+                </div>
+
+                <div class="field">
+                    <p>¿Ya tienes cuenta? <a id="change2login" href="javascript:void(0)">Loguéate</a></p>
+                </div>
+
+                <div class="field">
+                    <p><a class="popup-cerrar" href="javascript:void(0)">CERRAR</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

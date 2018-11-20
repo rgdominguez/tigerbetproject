@@ -1,0 +1,22 @@
+<!-- NOTICIAS -->
+<section id="noticias">
+    <div class="wrapper">
+        <div class="content">
+            <h2>NOTICIAS</h2>
+        </div>
+        <div class="grid3">
+            {% for noticia in noticias %}
+            <div class="col1-33 col-flex">
+                <figure>
+                    <img src="{{ asset(noticia.getImagen()) }}" alt="alt-image">
+                </figure>
+                <p class="fecha">{{ noticia.getFechaPublicacion() | date("d/m/Y") }}</p>
+                <h3 class="azul">{{ noticia.getTitular | upper }}</h3>
+                <p class="azul align-centrado">{{ noticia.getExtracto() }}</p>
+                <br>
+                <a class="button" href="/noticias/{{ noticia.getSlug() }}">VER MÁS</a>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>

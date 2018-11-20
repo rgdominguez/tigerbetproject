@@ -1,0 +1,26 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Inicio | TIGERBET{% endblock %}
+
+{% block body %}
+    {% include ":index:block.slider.html.twig"  %}
+    {% include ":index:block.secciones.html.twig"  %}
+    {% include ":index:block.descripcion.html.twig"  %}
+    {% include ":index:block.nba.html.twig" %}
+    {% include ":index:block.noticias.html.twig" %}
+    {% include ":index:block.contacto.html.twig" %}
+{% endblock %}
+
+
+{% block stylesheets %}
+    <link rel="stylesheet" href="{{ asset('css/slider.style.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/index.style.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/contacto.style.css') }}">
+{% endblock %}
+
+
+{% block javascripts %}
+    <script src="{{ asset('js/form.script.js') }}"></script>
+    <script src="{{ asset('js/user.script.js') }}"></script>
+    <script src="{{ asset('js/init.script.js') }}"></script>
+{% endblock %}

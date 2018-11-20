@@ -1,0 +1,40 @@
+{% extends "base.html.twig" %}
+
+{% block title %}Mi cuenta - Tigerbet{% endblock %}
+
+{% block body %}
+
+    <section class="imagen-cabecera">
+        <figure>
+            <img src="{{ asset('img/micuenta.jpg') }}" alt="micuenta.jpg">
+        </figure>
+        <h1 class="blanco sombra">MI CUENTA</h1>
+    </section>
+
+    <div class="blog">
+
+        <!-- CONTENIDO PRINCIPAL -->
+            <div class="wrapper">
+                <div class="breadcrumbs">
+                    <a href="" class="azul">INICIO</a> > <a href="" class="azul">Mi cuenta</a>
+                </div>
+
+                <section id="grid-casino" class="grid-casino">
+                    <div class="wrapper">
+                        {% include ':micuenta:table.html.twig' %}
+                    </div>
+
+                    <div class="wrapper">
+                      {% include ':micuenta:pagos.html.twig'%}
+                    </div>
+                </section>
+            </div>
+        <!-- fin CONTENIDO PRINCIPAL -->
+    </div>
+{% endblock %}
+
+
+{% block stylesheets %}
+    <link rel="stylesheet" href="{{ asset('css/custom-blog.style.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/casino.style.css') }}">
+{% endblock %}

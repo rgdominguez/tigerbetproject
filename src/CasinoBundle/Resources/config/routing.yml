@@ -1,0 +1,7 @@
+casino_homepage:
+    path:     /casino
+    defaults: { _controller: CasinoBundle:Default:index }
+
+casino_pruebas:
+   path:     /casino/{slug}
+   defaults: { _controller: CasinoBundle:Default:game }

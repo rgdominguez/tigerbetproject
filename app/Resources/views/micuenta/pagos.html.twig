@@ -1,0 +1,39 @@
+<div class="flex">
+    <div class="col1-50">
+        <figure>
+            <img src="{{ asset('img/tarjetas.jpg')}}" alt="tarjetas.jpg" >
+        </figure>
+    </div>
+    <div class="col1-50">
+        <div>
+            <h4>¿Quieres aumentar tu saldo?</h4>
+            <br>
+            <h5>
+                Nuestra pasarela virtual permite rellenar el saldo de tu cuenta con el mínimo esfurerzo.
+            </h5>
+            <h5>Pulsa el siguiente enlace para aumentar tu saldo <strong>TIGERBET</strong></h5>
+            <br>
+            <button id="pago-virtual" class="button">AUMENTAR MI SALDO</button>
+        </div>
+    </div>
+</div>
+
+{% block stylesheets %}
+    <style>
+        .flex{display: flex; margin:20px 0px; box-sizing: border-box}
+        .flex .col1-50{text-align: center;}
+        .flex div:nth-child(2){ padding: 0px 30px; box-sizing: border-box}
+    </style>
+{% endblock %}
+
+
+{% block javascripts %}
+    <script>
+        document.addEventListener('DOMContentLoaded', function(){
+            $('#pago-virtual').click(function(ev){
+                ev.preventDefault();
+                alert('Configurar Medios de Pago');
+            });
+        }, true);
+    </script>
+{% endblock %}

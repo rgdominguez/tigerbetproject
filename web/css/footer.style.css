@@ -1,0 +1,5 @@
+footer{ width: 100%; }
+footer .wrapper{ display: -webkit-box;display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; justify-content: space-between; flex-wrap: wrap; align-items: center; box-sizing: border-box; background: #000000; color: #ffffff; font-size: 10px; padding: 20px;}
+footer .wrapper> p:nth-child(3){ color: #f7941d;}
+
+

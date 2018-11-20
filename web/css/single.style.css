@@ -1,0 +1,6 @@
+#single{ padding: 0px 15px; box-sizing: border-box;}
+#single h2{ font-weight: 100; text-transform: uppercase;}
+#single p.subtitulo{ color:#898181;text-align: center; width: 80%; margin: 0 auto; font-style: italic; font-weight: 100;}
+.galeria.grid3 figure{ margin: 1px; }
+#single .contenido p{ text-align: justify; }
+#single .contenido h5{ text-align: right !important; padding: 10px;}

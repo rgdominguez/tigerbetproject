@@ -1,0 +1,50 @@
+{% extends "base.html.twig" %}
+{% block title "Casino | Tigerbet" %}
+
+{% block body %}
+
+    {% set username = session.username %}
+    {% set usermail = session.usermail %}
+
+    <section class="imagen-cabecera">
+        <figure>
+            <img src="{{ asset('img/casino2.png') }}" alt="casino2.png">
+        </figure>
+        <h1 class="blanco sombra">CASINO</h1>
+    </section>
+
+    <div class="blog">
+        <!-- CONTENIDO PRINCIPAL -->
+        <div class="col3-4">
+            <div class="wrapper">
+                <div class="breadcrumbs">
+                    <a href="" class="azul">INICIO</a> > <a href="" class="azul">Casino</a> > {{ slug }}
+                </div>
+                {% if slug == 'tragaperras' %}
+                    {% include 'casino/tragaperras.html.twig' %}
+                {% else %}
+                    {% include 'casino/otrosjuegos.html.twig' %}
+                {% endif %}
+
+            </div>
+        </div>
+        <!-- fin CONTENIDO PRINCIPAL -->
+
+        {% embed "sidebar.html.twig" %}
+        {% endembed %}
+    </div>
+{% endblock %}
+
+{% block stylesheets %}
+    <link rel="stylesheet" href="{{ asset('css/custom-blog.style.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/casino.style.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/tragaperras.style.css') }}">
+{% endblock %}
+
+{% block javascripts %}
+    {% if slug == 'tragaperras' %}
+    <script type="text/javascript" src="{{ asset('js/tragaperras.script.js') }}">
+    </script>
+    {% else %}
+    {% endif %}
+{% endblock %}

@@ -1,0 +1,42 @@
+ModelosBundle\Entity\Usuarios:
+    type: entity
+    table: usuarios
+    id:
+        id:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        nombre:
+            type: string
+            nullable: false
+            length: 50
+            options:
+                fixed: false
+        email:
+            type: string
+            nullable: false
+            length: 120
+            options:
+                fixed: false
+        password:
+            type: string
+            nullable: false
+            length: 50
+            options:
+                fixed: false
+        fechaIngreso:
+            type: date
+            nullable: true
+            column: fecha_ingreso
+        acumulado:
+            type: integer
+            nullable: true
+            options:
+                unsigned: false
+                default: '0'
+    lifecycleCallbacks: {  }

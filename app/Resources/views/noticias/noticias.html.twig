@@ -1,0 +1,55 @@
+{% extends "base.html.twig" %}
+{% block title "Noticia | Tigerbet" %}
+
+
+{% block body %}
+
+    <section class="imagen-cabecera">
+        <figure>
+            <img src="{{ asset('img/noticias.png') }}" alt="noticias.png">
+        </figure>
+        <h1 class="blanco sombra">NOTICIAS</h1>
+    </section>
+
+    <div class="blog">
+
+        <!-- CONTENIDO PRINCIPAL -->
+
+        <div class="col3-4">
+            <div class="wrapper">
+                <div class="breadcrumbs">
+                    <a href="" class="azul">INICIO</a> > <a href="" class="azul">Noticias</a>
+                </div>
+
+                <section id="grid-casino" class="grid-casino">
+                    <div class="wrapper">
+                        {% for noticia in noticias %}
+                            <div class="col-blog col-flex">
+                                <figure>
+                                    <img src="{{ asset(noticia.getImagen()) }}" alt="alt-image">
+                                </figure>
+                                <p class="fecha">{{ noticia.getFechaPublicacion() | date("d/m/Y") }}</p>
+                                <h3 class="azul">{{ noticia.getTitular | upper }}</h3>
+                                <p class="azul align-centrado">{{ noticia.getExtracto() }}</p>
+                                <br>
+                                <a class="button" href="/noticias/{{ noticia.getSlug() }}">LEER MÁS</a>
+                            </div>
+                        {% endfor %}
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <!-- fin CONTENIDO PRINCIPAL -->
+
+        {% embed "sidebar.html.twig" %}
+        {% endembed %}
+    </div>
+{% endblock %}
+
+
+
+{% block stylesheets %}
+    <link rel="stylesheet" href="{{ asset('css/custom-blog.style.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/casino.style.css') }}">
+{% endblock %}

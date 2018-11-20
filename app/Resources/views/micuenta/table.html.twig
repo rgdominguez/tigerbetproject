@@ -1,0 +1,30 @@
+<h2>APUESTAS TIGERBET</h2>
+
+<br>
+{% if apuestas is empty %}
+    <h3>Aún no tienes apuestas</h3>
+{% else %}
+<table class="table">
+    <caption>Usuario: {{apuestas[0].idUsuario.email }}</caption>
+    <thead class="thead-dark">
+    <tr>
+        <th scope="col">#</th>
+        <th scope="col">JUEGO</th>
+        <th scope="col">DISPONIBLE</th>
+        <th scope="col">APUESTA</th>
+        <th scope="col">FECHA</th>
+    </tr>
+    </thead>
+    <tbody>
+    {% for apuesta in apuestas  %}
+        <tr>
+            <th scope="row">{{ apuesta.id }}</th>
+            <td>{{ apuesta.idJuego.nombre | upper }}</td>
+            <td>{{ apuesta.disponible }}</td>
+            <td>{{ apuesta.apostado }}</td>
+            <td>{{ apuesta.fechaApuesta | date("d/m/Y") }}</td>
+        </tr>
+    {% endfor %}
+    </tbody>
+</table>
+{% endif %}

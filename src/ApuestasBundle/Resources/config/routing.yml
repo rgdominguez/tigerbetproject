@@ -1,0 +1,6 @@
+apuestas_insertar:
+    path:     /insertar-apuesta
+    defaults: { _controller: ApuestasBundle:Default:insertarApuesta }
+apuestas_update:
+  path:     /update-apuesta
+  defaults: { _controller: ApuestasBundle:Default:updateApuesta }

@@ -1,0 +1,37 @@
+{% extends 'base.html.twig' %}
+
+{% block title %} 404 | TIGERBET{% endblock %}
+
+{% block body %}
+    <section class="flex">
+        <div>
+            <figure>
+                <img src="{{ asset('img/404.jpg') }}" alt="404.jpg">
+            </figure>
+        </div>
+        <div>
+            <h2>404 PÁGINA NO ENCONTRADA</h2>
+            <p>La página a la que quieres acceder no está disponible o no tienes los suficientes permisos para acceder. Intenta registrarte y prueba a acceder otra vez.</p>
+        </div>
+    </section>
+{% endblock %}
+
+{% block stylesheets %}
+    <style>
+        section{
+            width: 100%;
+            display: flex;
+        }
+        section > div:nth-child(1){
+            width: 32%;
+        }
+        section > div:nth-child(2){
+            width: 68%;
+        }
+        section > div{
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+    </style>
+{% endblock %}

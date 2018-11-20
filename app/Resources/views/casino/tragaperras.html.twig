@@ -1,0 +1,86 @@
+<section id="grid-casino" class="grid-casino">
+    <div class="wrapper">
+        <div class="explicacion">
+            <h3 class="align-centrado">INSTRUCCIONES DEL JUEGO</h3>
+            <br>
+
+            <p class="align-centrado">En la casilla disponible, se acumulan los puntos totales que tienes actualmente. Puedes apostar la cantidad que quieras siempre que ésta sea menor al disponible de tu cuenta. En caso de tener saldo negativo, tendrás que hacer un nuevo ingreso en tu cuenta en la sessión <a href="http://localhost/tigerbet/categoria/micuenta.php">mi cuenta</a>.</p>
+            <br>  <br>
+
+            <h3>PREMIOS</h3>
+            <br>
+            <div style="display: flex; justify-content: center; align-items: center">
+                <ul class="ulnostyle">
+                    <li><strong>Limón y naranja: 0 puntos</strong></li>
+                    <li><strong>Ciruelas: 1 puntos</strong></li>
+                    <li><strong>Cerezas: 2 puntos</strong></li>
+                    <li><strong>Estrella: 1 puntos</strong></li>
+                    <li><strong>Dos sietes: 15 puntos</strong></li>
+                    <li><strong>Dos campanas: 20 puntos</strong></li>
+                    <li><strong>Bar: Comodín</strong></li>
+                </ul>
+
+                <ul class="ulnostyle">
+                    <li><p>En el caso de obtener 3 piezas iguales, el premio es:</p></li>
+                    <li><strong>3 frutas iguales: 10 puntos + triple de lo que valga la fruta</strong></li>
+                    <li><strong>3 limones o 3 naranjas: 10 puntos</strong></li>
+                    <li><strong>3 sandías: 20 puntos</strong></li>
+                    <li><strong>3 cerezas: 30 puntos</strong></li>
+                    <li><strong>3 sietes: 100 puntos</strong></li>
+                    <li><strong>3 bar: 200 puntos</strong></li>
+                </ul>
+            </div>
+
+        </div>
+
+
+        <div class="casino casino-tragaperras">
+            <div class="wrapper">
+
+                <div class="juego">
+                    <h3 class="align-centrado">JUEGA Y GANA</h3>
+                    <br>
+                    <div class="machine">
+                        <div class="slot">
+                            <figure>
+                                <img src="{{ asset('img/naranja.png') }}" alt="casino2.png">
+                            </figure>
+                        </div>
+                        <div class="slot">
+                            <figure>
+                                <img src="{{ asset('img/siete.png') }}" alt="casino2.png">
+                            </figure>
+                        </div>
+                        <div class="slot">
+                            <figure>
+                                <img src="{{ asset('img/cereza.png') }}" alt="casino2.png">
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+                <div class="jugada flex">
+                    <form action="" name="contacto" method="POST" class="flex">
+
+                        <div class="fields">
+
+                            <div class="field">
+                                <label class="align-centrado small" for="disponible"><strong>Disponible</strong></label>
+                                <input type="text" id="disponible" value="{{ saldo }}" disabled>
+                            </div>
+
+                            <div class="field">
+                                <label class="align-centrado small" for="disponible"><strong>Tu jugada</strong></label>
+                                <input id="apuesta-amount" type="text" value="0">
+                            </div>
+                            <input type="hidden" id="username_tg" value="{{ username }}">
+                            <input type="hidden" id="usermail_tg" value="{{ usermail }}">
+                        </div>
+                        <p class="align-centrado">Resultado de la apuesta</p>
+                        <p class="align-centrado small"><span class="small">Comienza a jugar</span></p>
+                        <button id="play-tragaperras">JUGAR</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,106 @@
+div.blog{width: 100%; overflow-x: hidden; box-sizing: border-box; display: flex; }
+p.fecha{text-align: center; font-size: 10px;}
+
+/*IMAGEN DE CABECERA*/
+main section.imagen-cabecera{ width: 100%; height: 280px; overflow:hidden; margin: 0px 0px 30px 0px !important;  position: relative;}
+main section.imagen-cabecera figure{ width: 100%; filter:blur(3px); filter:blur(5px); position: absolute; overflow:hidden;}
+main section.imagen-cabecera h1{
+    width: 100%; height:100%; margin: 0 auto; background: rgba(0,0,0,0.72); position: absolute;
+    display: flex; justify-content: center; align-items: center;
+}
+
+/*CONTENEDORES*/
+.blog .col1-4{width: 27%;}
+.blog .col3-4{width: 73%;}
+.blog ul, .blog li{width: 100%;}
+.blog li{ padding: 3px 0px 0px 0px; margin: 10px 0px; box-sizing: border-box; text-align: center; color: #ffffff; background: #293c80;}
+.blog .sidebar-container{margin: 50px 0px;}
+.blog .sidebar-container div{margin-top: 20px;}
+.sombra{ text-shadow: 0px 0px 10px rgba(0,0,0, 1); }
+.blanco{ color: #d3d3d3; }
+
+
+/*DISPOSICIONES GRID CASINO, NOTICIAS, DEPORTES*/
+#noticias.blog-noticias .col-blog,
+#grid-deportes.grid-deportes .col-blog,
+#grid-casino.grid-casino .col-blog{
+    margin: 30px; border: 1px solid rgba(0,0,0,.3);background: #ffffff;
+}
+#noticias.blog-noticias .col1-50 a,
+#noticias.blog-noticias .col1-50 a,
+#grid-deportes.grid-deportes .col1-50 a,
+#grid-casino.grid-casino .col1-50 a{
+    color:#ff9500; font-weight: bold; transition: all 300ms ease-in-out;
+}
+#noticias.blog-noticias .col-blog a:hover,
+#noticias.blog-noticias .col-blog a:hover,
+#grid-deportes.grid-deportes .col-blog a:hover,
+#grid-casino.grid-casino .col-blog a:hover{ color:#293c80;}
+
+.wrapper {
+    width: 100%;
+    padding: 7px 20px;
+    overflow-x: hidden;
+}
+
+#grid-casino .wrapper .col-blog{
+    width: 48%;
+    box-sizing: border-box;
+    flex-direction: column;
+    padding: 20px;
+    border: 2px solid rgba(0,0,0,0.2);
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.4);
+    margin: 1%;
+    float: left;
+}
+.col-blog a{
+    padding: 10px;
+    margin: -6px auto 30px auto !important;
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+    color: #fff;
+    background: #424242;
+    border: 2px solid #424242;
+}
+.col-blog a:hover{
+    border: 2px solid orangered;
+    background: orange;
+    color: #fff;
+}
+
+form button {
+    background: #3bd23b;
+    color: #ffffff;
+    font-size: 20px;
+    margin-top: 20px;
+    transition: all 300ms ease-in-out;
+    width: 100%;
+    padding: 10px;
+    border: 2px solid palegreen;
+    transition: all 300ms ease-in-out;
+}
+form button:hover {
+    background: orangered;
+    border: 2px solid orange;
+    cursor: pointer;
+}
+
+
+@media (max-width: 900px) {
+    .blog{ flex-direction: column; }
+    .blog .col3-4{width: 100%;}
+    .blog .col1-4{ display: none; }
+}
+
+@media (max-width: 700px) {
+    .blog{ flex-direction: column; }
+    .grid3{ flex-direction: column }
+    .grid3 .col1-50.col-flex{ width: 100%; }
+    .blog .col3-4{width: 100%;}
+    .blog .col1-4{ display: none; }
+    #grid-casino .wrapper .col-blog{width: 100%; float: none;}
+    .col-blog a{width: 100%;}
+    .casino .wrapper{flex-direction: column !important;}
+    .casino .wrapper .juego, .casino .wrapper .jugada{ width: 100%;}
+}

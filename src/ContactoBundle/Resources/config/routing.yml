@@ -1,0 +1,6 @@
+contacto_homepage:
+    path:     /insertar-contacto
+    defaults: { _controller: ContactoBundle:Default:ajax }
+    methods: [GET, POST]
+
+

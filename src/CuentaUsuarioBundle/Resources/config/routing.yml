@@ -1,0 +1,14 @@
+cuenta_usuario_homepage:
+    path:     /micuenta
+    defaults: { _controller: CuentaUsuarioBundle:Default:index }
+    methods: [GET, POST]
+login_usuario:
+    path:     /login-usuario
+    defaults: { _controller: CuentaUsuarioBundle:Default:login }
+registro_usuario:
+    path:     /registro-usuario
+    defaults: { _controller: CuentaUsuarioBundle:Default:registro }
+    methods: [GET, POST]
+error_homepage:
+    path:     /error
+    defaults: { _controller: CuentaUsuarioBundle:Default:error }

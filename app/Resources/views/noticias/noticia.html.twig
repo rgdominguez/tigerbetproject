@@ -1,0 +1,84 @@
+{% extends "base.html.twig" %}
+{% block title "NOTICIA | Tigerbet" %}
+
+{% block body %}
+
+    <section class="imagen-cabecera">
+        <figure>
+            <img src={{asset(noticia[0].getImagen())}} alt="{{ noticia[0].getImagen()}}">
+        </figure>
+        <h1 class="blanco sombra">{{ noticia[0].getTitular() | upper }}</h1>
+    </section>
+
+
+    <div class="blog">
+
+        <!-- CONTENIDO PRINCIPAL -->
+
+        <div class="col3-4">
+            <div class="wrapper">
+                <div class="breadcrumbs">
+                    <a href="/noticias" class="azul">NOTICIAS</a> > <a href="" class="azul">{{ noticia[0].getTitular() | lower }}</a>
+                </div>
+
+                <div class="espacio_vacio"></div>
+
+                <section id="single">
+
+                    <p class="fecha" style="text-align: center;">
+                        {{ noticia[0].getFechaPublicacion() | date }}
+                    </p>
+                    <h2>{{ noticia[0].getTitular()}}</h2>
+
+                    <p class="subtitulo">
+                        {{ noticia[0].getExtracto() }}
+                    </p>
+
+                    <div class="espacio_vacio"></div>
+
+                    <figure>
+                        <img src={{asset(noticia[0].getImagen())}} alt="{{ noticia[0].getImagen()}}">
+                    </figure>
+
+                    <div class="espacio_vacio"></div>
+
+                    <div class="contenido">
+                        {{ noticia[0].getContenido() | raw }}
+                    </div>
+
+                    <div class="espacio_vacio"></div>
+
+                    <!--
+                    <div class="galeria grid3">
+                        <figure>
+                            <img src={{asset(noticia[0].getImagen())}} alt="{{ noticia[0].getImagen()}}">
+                        </figure>
+                        <figure>
+                            <img src={{asset(noticia[0].getImagen())}} alt="{{ noticia[0].getImagen()}}">
+                        </figure>
+                    </div>
+                    -->
+
+                    <div class="espacio_vacio"></div>
+
+                    <h5>Por Roberto Gómez</h5>
+                </section>
+
+
+                <div class="espacio_vacio"></div>
+            </div>
+        </div>
+
+        <!-- fin CONTENIDO PRINCIPAL -->
+
+        {% embed "sidebar.html.twig" %}
+        {% endembed %}
+    </div>
+{% endblock %}
+
+
+{% block stylesheets %}
+    <link rel="stylesheet" href="{{ asset('css/custom-blog.style.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/casino.style.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/single.style.css') }}">
+{% endblock %}

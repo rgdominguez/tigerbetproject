@@ -1,0 +1,16 @@
+/*HEADER*/
+header{ background: #000000;  color: #ffffff; font-size: 10px;}
+.login > a{ margin-right: 20px;}
+header .wrapper div{ margin: 3px; }
+header div#rrss{ justify-content: space-between; align-items: center; }
+header div#rrss .login{ width: 33%; align-items:center;}
+header .rrss-icons a{ padding: 4px !important; }
+header .rrss-icons img{ width: 20px; height: 20px; }
+
+/*NAV*/
+nav#menu-normal { width: 100%; background: #141414; color: #ffffff; transition: all 1200ms ease-in-out;}
+nav#menu-normal ul{ justify-content: flex-end; align-items: center; height: 100%; }
+nav#menu-normal ul li{height: 100%;}
+nav#menu-normal ul li a{ width: 100%; height: 100%;  align-items: center; padding: 10px; transition: all 300ms ease-in-out; border-bottom: 3px solid #141414;}
+nav#menu-normal ul li a.active{ border-bottom: 3px solid #f7941d; }
+nav#menu-normal ul li a:hover{ background:#f7941d; color: #ffffff;}

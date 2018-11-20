@@ -1,0 +1,49 @@
+{% extends "base.html.twig" %}
+{% block title "Casino | Tigerbet" %}
+
+{% block body %}
+
+    <section class="imagen-cabecera">
+        <figure>
+            <img src="{{ asset('img/casino2.png') }}" alt="casino2.png">
+        </figure>
+        <h1 class="blanco sombra">CASINO</h1>
+    </section>
+
+    <div class="blog">
+
+        <!-- CONTENIDO PRINCIPAL -->
+        <div class="col3-4">
+            <div class="wrapper">
+                <div class="breadcrumbs">
+                    <a href="" class="azul">INICIO</a> > <a href="" class="azul">Casino</a>
+                </div>
+
+                <section id="grid-casino" class="grid-casino">
+                    <div class="wrapper">
+                        {% for game in games %}
+                                <div class="col-blog col-flex">
+                                    <figure>
+                                        <img src="{{ game.getImagen() }}" alt="{{ game.getImagen() }}">
+                                    </figure>
+                                    <h3 class="azul">{{  game.getNombre() | upper }}</h3>
+                                    <br>
+                                    <a href="/casino/{{ game.getNombre() }}">ENTRAR AL JUEGO</a>
+                                </div>
+                        {% endfor %}
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <!-- fin CONTENIDO PRINCIPAL -->
+
+        {% embed "sidebar.html.twig" %}
+        {% endembed %}
+    </div>
+{% endblock %}
+
+{% block stylesheets %}
+    <link rel="stylesheet" href="{{ asset('css/custom-blog.style.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/casino.style.css') }}">
+{% endblock %}

@@ -1,0 +1,35 @@
+apuestas:
+    resource: "@ApuestasBundle/Resources/config/routing.yml"
+    prefix:   /
+
+noticias:
+    resource: "@NoticiasBundle/Resources/config/routing.yml"
+    prefix:   /
+
+modelos:
+    resource: "@ModelosBundle/Resources/config/routing.yml"
+    prefix:   /
+
+deportes:
+    resource: "@DeportesBundle/Resources/config/routing.yml"
+    prefix:   /
+
+cuenta_usuario:
+    resource: "@CuentaUsuarioBundle/Resources/config/routing.yml"
+    prefix:   /
+
+contacto:
+    resource: "@ContactoBundle/Resources/config/routing.yml"
+    prefix:   /
+
+index:
+    resource: "@IndexBundle/Resources/config/routing.yml"
+    prefix:   /
+
+casino:
+    resource: "@CasinoBundle/Resources/config/routing.yml"
+    prefix:   /
+
+app:
+    resource: "@IndexBundle/Controller/"
+    type:     annotation

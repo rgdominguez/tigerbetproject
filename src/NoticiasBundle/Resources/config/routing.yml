@@ -1,0 +1,7 @@
+noticias_homepage:
+    path:     /noticias
+    defaults: { _controller: NoticiasBundle:Default:index }
+
+ruta_blog:
+    path: /noticias/{slug}
+    defaults: {_controller: NoticiasBundle:Default:blog}

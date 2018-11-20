@@ -1,0 +1,27 @@
+.explicacion{ margin: 50px auto; }
+.casino{
+    color: #ffffff;
+    width: 100%;
+    margin: 50px auto;
+    box-sizing: border-box;
+    padding: 10px;
+    background: #ffffff;
+    border: 2px solid rgba(0,0,0,0.3);
+}
+.casino .wrapper{
+    width: 100%;
+    padding: 0px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.casino .wrapper>div{ padding: 10px; box-sizing: border-box; }
+
+/*CONTENEDOR DE JUEGO*/
+.casino .wrapper .juego{ width: 65%; }
+.casino .wrapper .juego div.machine{ width: 100%; display: flex; justify-content: center; align-items: center;}
+
+/*CONTENEDOR DE JUGADAS*/
+.casino .wrapper .jugada{ width: 35%;  }
+.explicacion a{ color:#f7941d !important; }

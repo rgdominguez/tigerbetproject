@@ -1,0 +1,39 @@
+<div class="col1-4">
+    <div class="wrapper">
+        <div class="sidebar-container">
+            <h3>SECCIONES</h3>
+
+            {% if misesion is empty %}
+                {% set clase_desactivado = 'desactivado' %}
+            {% else %}
+                {% set clase_desactivado = '' %}
+            {% endif %}
+            <ul>
+                <li>
+                    <a href="" class="list-blue {{ clase_desactivado }}">
+                        <p style="margin: 5px 0px;">CASINO</p>
+                    </a>
+                    <figure>
+                        <img src="{{ asset('img/casino2.png') }}" alt="{{ asset('img/casino2.png') }}">
+                    </figure>
+                </li>
+                <li>
+                    <a href="" class="list-blue {{ clase_desactivado }}">
+                        <p style="margin: 5px 0px;">DEPORTES</p>
+                    </a>
+                    <figure>
+                        <img src="{{ asset('img/deportes.png') }}" alt="{{ asset('img/deportes.png') }}">
+                    </figure>
+                </li>
+                <li>
+                    <a href="" class="list-blue">
+                        <p style="margin: 5px 0px;">NOTICIAS</p>
+                        <figure>
+                            <img src="{{ asset('img/noticias.png') }}" alt="{{ asset('img/noticias.png') }}">
+                        </figure>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

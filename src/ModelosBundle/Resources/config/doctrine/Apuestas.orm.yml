@@ -1,0 +1,58 @@
+ModelosBundle\Entity\Apuestas:
+    type: entity
+    table: apuestas
+    indexes:
+        id_juego:
+            columns:
+                - id_juego
+        id_usuario:
+            columns:
+                - id_usuario
+    id:
+        id:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        apostado:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+        disponible:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+        fechaApuesta:
+            type: datetime
+            nullable: false
+            options:
+                default: CURRENT_TIMESTAMP
+            column: fecha_apuesta
+    manyToOne:
+        idJuego:
+            targetEntity: Juegos
+            cascade: {  }
+            fetch: LAZY
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                id_juego:
+                    referencedColumnName: id
+            orphanRemoval: false
+        idUsuario:
+            targetEntity: Usuarios
+            cascade: {  }
+            fetch: LAZY
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                id_usuario:
+                    referencedColumnName: id
+            orphanRemoval: false
+    lifecycleCallbacks: {  }

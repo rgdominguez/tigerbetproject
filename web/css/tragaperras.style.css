@@ -1,0 +1,49 @@
+.casino-tragaperras{
+    background-image: url(../img/slots.jpg);
+    background-size: 100% 100%;
+    background-origin: 50% 50%;
+    background-repeat: no-repeat;
+}
+.casino .wrapper .juego div.machine .slot{
+    position: relative;
+    margin: 10px;
+    width: 33.33333%;
+    margin: 5px;
+    height: 150px;
+    max-height: 200px;
+    border: 5px solid #ff9500;
+    border-radius: 20px;
+    box-sizing: border-box;
+    background: #ffffff;
+    overflow: hidden;
+}
+
+.casino .wrapper .juego div.machine .slot figure{ width: 100%; height: 100%; position: relative; top: 0; left: 0; transition: all 100ms ease-in-out;}
+.casino .wrapper .juego div.machine .slot figure img { width: 100%; height: 100% }
+
+.explicacion ul.ulnostyle li{
+    background: none;
+    color: #212121;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.casino form{  width: 100%;}
+.casino form .fields{ display: flex; width: 100%; }
+.casino form .fields .field{ width: 50%; margin: 5px; box-sizing: border-box; }
+.casino form .fields .field input{ width: 100%; text-align: center; height:83px; font-size: 50px }
+
+.jugar_disabled{pointer-events: none; background: #d3d3d3}
+form .small{display: none;}
+.casino .wrapper .jugada{align-items: center;}
+.casino form{
+    flex-direction: column;
+}
+
+@media (max-width: 700px) {
+    .casino-tragaperras{padding: 30px; box-sizing: border-box;}
+    .casino .wrapper{flex-direction: column !important;}
+    .casino .wrapper .juego, .casino .wrapper .jugada{ width: 100%;}
+}

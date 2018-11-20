@@ -1,0 +1,17 @@
+/*CONTACTO*/
+textarea { resize: none; overflow: hidden; height: 150px;}
+section#contacto{ margin: 70px 0px 0px 0px; }
+section#contacto .wrapper{background: #293c80; padding: 100px 30px !important; color:#ffffff; box-sizing: border-box;}
+section#contacto .wrapper .col1-50 h3{ font-size: 20px; text-align: center;  }
+section#contacto .wrapper .col1-50{ margin: 0px 15px; height: 425px;}
+section#contacto .wrapper .col1-50 figure{ width: 35%; margin: 0 auto; }
+form{ flex-direction: column; }
+form, section#contacto .wrapper .col1-50 .result{ width: 70%; }
+section#contacto .wrapper .col1-50 .result{ margin: 20px 0px; color: white; padding: 10px; opacity: 0; transition: opacity 400ms ease-in-out;}
+section#contacto .wrapper .col1-50 .result.success{ background: #3bd23b;}
+section#contacto .wrapper .col1-50 .result.error{ background: crimson;}
+form input,
+form textarea,
+form button{ padding: 10px; border: 2px solid #212121; border-radius: 10px; margin:4px 0px;}
+form button{ background: #3bd23b; color: #ffffff; font-size: 20px; margin-top: 20px; transition: all 300ms ease-in-out;}
+form button:hover{ background: #f7941d; cursor:pointer; }

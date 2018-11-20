@@ -1,0 +1,3 @@
+modelos_homepage:
+    path:     /
+    defaults: { _controller: ModelosBundle:Default:index }
