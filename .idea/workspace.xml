@@ -8,9 +8,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1ecccddd-8899-4ee9-bc3f-c1ff6ec721bd" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/web/js/headermenu.script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/config/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/config.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/config/parameters.yml.dist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Resources/views/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/views/base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Resources/views/index/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/views/index/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/css/header.style.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/css/header.style.css" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/vendor/composer/" />
     <ignored path="$PROJECT_DIR$/vendor/doctrine/annotations/" />
@@ -123,34 +127,52 @@
     <session id="1821284516">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="1" />
           <entry key="project.open.time.13" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.open.time.94" value="1" />
+          <entry key="project.opened" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="console" value="1" />
+          <entry key="css" value="2" />
           <entry key="dist" value="1" />
-          <entry key="php" value="1" />
+          <entry key="js" value="1" />
+          <entry key="json" value="1" />
+          <entry key="php" value="2" />
           <entry key="symfony_requirements" value="1" />
+          <entry key="ts" value="1" />
+          <entry key="twig" value="3" />
           <entry key="yml" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="PHP" value="3" />
+          <entry key="CSS" value="2" />
+          <entry key="JSON" value="1" />
+          <entry key="JavaScript" value="1" />
+          <entry key="PHP" value="4" />
           <entry key="PLAIN_TEXT" value="1" />
+          <entry key="Twig" value="3" />
+          <entry key="TypeScript" value="1" />
           <entry key="YAML" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="yml" value="37" />
+          <entry key="css" value="260" />
+          <entry key="js" value="472" />
+          <entry key="twig" value="196" />
+          <entry key="yml" value="39" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="YAML" value="37" />
+          <entry key="CSS" value="260" />
+          <entry key="JavaScript" value="472" />
+          <entry key="Twig" value="196" />
+          <entry key="YAML" value="39" />
         </counts>
       </usages-collector>
     </session>
@@ -158,22 +180,30 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/config/parameters.yml">
+        <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="14" column="23" lean-forward="true" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
+            <state relative-caret-position="307">
+              <caret line="124" column="36" selection-start-line="124" selection-start-column="36" selection-end-line="124" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/js/headermenu.script.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="55" selection-start-line="4" selection-start-column="55" selection-end-line="4" selection-end-column="55" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/bin/console">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/config/config_prod.yml">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/web/css/header.style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="20" column="34" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="34" />
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -219,7 +249,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/config/config.yml" />
         <option value="$PROJECT_DIR$/src/DeportesBundle/Resources/config/routing.yml" />
         <option value="$PROJECT_DIR$/src/DeportesBundle/Resources/views/Default/index.html.twig" />
         <option value="$PROJECT_DIR$/src/IndexBundle/Resources/views/Default/index.html.twig" />
@@ -250,7 +279,6 @@
         <option value="$PROJECT_DIR$/src/CuentaUsuarioBundle/Repository/CuentaUsuario/CuentaUsuarioRepository.php" />
         <option value="$PROJECT_DIR$/src/ApuestasBundle/Controller/DefaultController.php" />
         <option value="$PROJECT_DIR$/app/Resources/views/sidebar.html.twig" />
-        <option value="$PROJECT_DIR$/app/Resources/views/index/index.html.twig" />
         <option value="$PROJECT_DIR$/src/CuentaUsuarioBundle/Resources/config/routing.yml" />
         <option value="$PROJECT_DIR$/src/DeportesBundle/Controller/DefaultController.php" />
         <option value="$PROJECT_DIR$/src/CasinoBundle/Controller/DefaultController.php" />
@@ -259,16 +287,19 @@
         <option value="$PROJECT_DIR$/app/Resources/views/index/block.nba.html.twig" />
         <option value="$PROJECT_DIR$/web/css/index.style.css" />
         <option value="$PROJECT_DIR$/web/css/contacto.style.css" />
-        <option value="$PROJECT_DIR$/web/css/header.style.css" />
         <option value="$PROJECT_DIR$/app/Resources/views/menumobile.html.twig" />
-        <option value="$PROJECT_DIR$/app/Resources/views/base.html.twig" />
         <option value="$PROJECT_DIR$/web/css/responsive.style.css" />
         <option value="$PROJECT_DIR$/src/CuentaUsuarioBundle/Controller/DefaultController.php" />
         <option value="$PROJECT_DIR$/app/Resources/views/micuenta/table.html.twig" />
         <option value="$PROJECT_DIR$/app/Resources/views/micuenta/paypal.html.twig" />
         <option value="$PROJECT_DIR$/app/Resources/views/micuenta/micuenta.html.twig" />
         <option value="$PROJECT_DIR$/app/Resources/views/micuenta/pagos.html.twig" />
+        <option value="$PROJECT_DIR$/composer.json" />
         <option value="$PROJECT_DIR$/app/config/parameters.yml" />
+        <option value="$PROJECT_DIR$/app/Resources/views/index/index.html.twig" />
+        <option value="$PROJECT_DIR$/app/Resources/views/base.html.twig" />
+        <option value="$PROJECT_DIR$/web/js/headermenu.script.js" />
+        <option value="$PROJECT_DIR$/web/css/header.style.css" />
       </list>
     </option>
   </component>
@@ -325,7 +356,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -341,12 +371,50 @@
             <path>
               <item name="tigerbetproject" type="b2602c69:ProjectViewProjectNode" />
               <item name="tigerbetproject" type="462c0819:PsiDirectoryNode" />
-              <item name="bin" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tigerbetproject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tigerbetproject" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tigerbetproject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tigerbetproject" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tigerbetproject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tigerbetproject" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="IndexBundle" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tigerbetproject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tigerbetproject" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="IndexBundle" type="462c0819:PsiDirectoryNode" />
+              <item name="Controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tigerbetproject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tigerbetproject" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tigerbetproject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tigerbetproject" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -383,17 +451,19 @@
       <workItem from="1542230461333" duration="63767000" />
       <workItem from="1542532902603" duration="26698000" />
       <workItem from="1542577253134" duration="26000" />
-      <workItem from="1542744641430" duration="388000" />
+      <workItem from="1542744641430" duration="1177000" />
+      <workItem from="1542746977732" duration="2287000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="117331000" />
+    <option name="totallyTimeSpent" value="120407000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.30257186" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.30711043" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -443,21 +513,12 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/.." />
+    </ignored-roots>
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/ContactoBundle/Resources/config/routing.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="41" selection-start-line="2" selection-start-column="41" selection-end-line="2" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/index/block.popup.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="63" column="73" selection-start-line="63" selection-start-column="73" selection-end-line="63" selection-end-column="73" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Resources/views/casino/otrosjuegos.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -515,13 +576,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
           <caret line="26" column="62" selection-start-line="22" selection-start-column="12" selection-end-line="26" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.dom.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="4753" column="60" selection-start-line="4753" selection-start-column="60" selection-end-line="4753" selection-end-column="60" />
         </state>
       </provider>
     </entry>
@@ -590,13 +644,6 @@
     <entry file="file://$PROJECT_DIR$/app/Resources/views/index/block.descripcion.html.twig">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/index/index.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="46" lean-forward="true" selection-start-line="8" selection-start-column="46" selection-end-line="8" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ApuestasBundle/Controller/DefaultController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1189">
@@ -656,20 +703,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/css/header.style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/IndexBundle/Controller/DefaultController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="24" column="10" selection-start-line="24" selection-start-column="10" selection-end-line="24" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/css/responsive.style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="469">
@@ -685,13 +718,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Resources/views/menumobile.html.twig" />
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="394">
-          <caret line="116" column="44" lean-forward="true" selection-start-line="116" selection-start-column="44" selection-end-line="116" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/CuentaUsuarioBundle/Resources/config/routing.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -710,9 +736,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="561">
           <caret line="38" column="51" selection-start-line="38" selection-start-column="43" selection-end-line="38" selection-end-column="51" />
-          <folding>
-            <element signature="e#50#84#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -727,9 +750,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
           <caret line="27" column="59" selection-start-line="27" selection-start-column="59" selection-end-line="27" selection-end-column="59" />
-          <folding>
-            <element signature="e#847#872#0#Twig" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -739,24 +759,73 @@
     <entry file="file://$PROJECT_DIR$/app/config/config.yml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/config_prod.yml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/autoload.php">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/parameters.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="14" column="23" lean-forward="true" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/bin/symfony_requirements">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" column="6" lean-forward="true" selection-start-line="27" selection-start-column="6" selection-end-line="27" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/parameters.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/IndexBundle/Controller/DefaultController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="24" column="10" selection-start-line="24" selection-start-column="10" selection-end-line="24" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/bin/console">
       <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/index/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="60" selection-start-line="22" selection-start-column="60" selection-end-line="22" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/config_prod.yml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="307">
+          <caret line="124" column="36" selection-start-line="124" selection-start-column="36" selection-end-line="124" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.dom.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="17064" column="12" selection-start-line="17064" selection-start-column="12" selection-end-line="17064" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/headermenu.script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="55" selection-start-line="4" selection-start-column="55" selection-end-line="4" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/css/header.style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="20" column="34" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="34" />
+        </state>
+      </provider>
     </entry>
   </component>
 </project>

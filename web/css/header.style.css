@@ -6,8 +6,13 @@ header div#rrss{ justify-content: space-between; align-items: center; }
 header div#rrss .login{ width: 33%; align-items:center;}
 header .rrss-icons a{ padding: 4px !important; }
 header .rrss-icons img{ width: 20px; height: 20px; }
+.button-logout{margin: 12px; background: orange; color:#ffffff;
+    font-weight: bold; text-transform: uppercase;
+    padding: 10px; border-radius: 7px;}
+.button-logout:hover{color:#ffffff; background:crimson;}
 
 /*NAV*/
+#menu li{ background:transparent; transition: add 300ms ease-in-out}
 nav#menu-normal { width: 100%; background: #141414; color: #ffffff; transition: all 1200ms ease-in-out;}
 nav#menu-normal ul{ justify-content: flex-end; align-items: center; height: 100%; }
 nav#menu-normal ul li{height: 100%;}
