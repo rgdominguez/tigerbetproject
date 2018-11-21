@@ -53,11 +53,34 @@
     }
 
     function getRegistroResponse(params){
+        console.log(params);
         let reg_form = {
             'email' : params[1],
             'password'  : params[2],
-            'nombre' : params[0]
+            'nombre' : params[0],
+            'password2': params[3]
         };
+
+
+        if(!valEmail(reg_form.email)){
+            $('#remail').val('');
+            $('#remail').focus();
+            $('#remail+p').text('Introduce un email válido');
+            setTimeout(function () {
+                $('#remail+p').text('');
+            }, 2400);
+            return;
+        }
+
+        if(reg_form.password != reg_form.password2){
+            $('#rpassword').val("");
+            $('#rpassword2').val("");
+            $('#rpassword+p').text('Las contraseñas no coinciden');
+            setTimeout(function () {
+                $('#rpassword+p').text('');
+            }, 2400)
+            return;
+        }
 
         $.ajax({
             type: "POST",
@@ -65,11 +88,12 @@
             data: JSON.stringify(reg_form),
             dataType: "json",
             success: function(response) {
-                console.log(response);
-                redirect();
+                $('.align-centrado.msg-error').css({'color': 'green'});
+                $('.align-centrado.msg-error').text('Bienvenido. Redirigiendo...');
+                window.location = 'http://localhost:8000/inicio';
             },
             error: function(e){
-                console.log('error');
+                swal({title: "ERROR",text: "Error SYNC en el registro del nuevo usuario",icon: "error",button: "Cerrar",})
             }
         });
         return;

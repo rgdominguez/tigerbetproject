@@ -30,6 +30,18 @@
             {'slot': slotsimg[2].alt}
         ];
 
+        /*
+        Limón y naranja: 0 puntos
+        Ciruelas: 1 puntos
+        Cerezas: 2 puntos
+        Estrella: 1 puntos
+        Dos sietes: 15 puntos
+        Dos campanas: 20 puntos
+        Bar: Comodín
+         */
+
+        console.log(premiados);
+
         premiados.map(function(elemento){
             if('ciruela' == elemento['slot'] || 'estrella' == elemento['slot']){
                 acumulado+=1;
@@ -50,6 +62,8 @@
                 bares+=1;
             }
         });
+
+        alert(acumulado);
 
         //dobles y triples
         if(sietes == 2 ||(sietes==1 && bares==1)){ acumulado+=15;}
