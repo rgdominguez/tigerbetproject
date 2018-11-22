@@ -1,0 +1,10 @@
+#fredsys{flex-direction: column;     margin: 30px 0px 100px 0px;}
+#fredsys input{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #7ba6f3;
+    border-radius: 7px;
+}
+#fredsys input[type="submit"]{
+    margin-top: 20px;
+}

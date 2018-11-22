@@ -13,7 +13,20 @@
             </h5>
             <h5>Pulsa el siguiente enlace para aumentar tu saldo <strong>TIGERBET</strong></h5>
             <br>
-            <button id="pago-virtual" class="button">AUMENTAR MI SALDO</button>
+            <form action="" method="POST">
+                <script
+                        src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+                        data-key="pk_test_y28iaWElla5Q24YdkSgzIwRN"
+                        data-amount="2000"
+                        data-name="TIGERBET"
+                        data-description="Aumento de saldo TIGERBET"
+                        data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
+                        data-locale="auto"
+                        data-zip-code="true"
+                        data-currency="eur">
+                </script>
+            </form>
+            <!-- https://docs.adyen.com/developers/test-cards/test-card-numbers-->
         </div>
     </div>
 </div>
@@ -23,17 +36,33 @@
         .flex{display: flex; margin:20px 0px; box-sizing: border-box}
         .flex .col1-50{text-align: center;}
         .flex div:nth-child(2){ padding: 0px 30px; box-sizing: border-box}
+        .stripe-button-el {
+            width: 40%;
+            margin: 0 auto;
+            background: #0088CC;
+        }
+
     </style>
 {% endblock %}
 
 
 {% block javascripts %}
+    <script src="https://js.stripe.com/v3/"></script>
     <script>
-        document.addEventListener('DOMContentLoaded', function(){
-            $('#pago-virtual').click(function(ev){
-                ev.preventDefault();
-                alert('Configurar Medios de Pago');
-            });
-        }, true);
+        var stripe = Stripe('pk_test_y28iaWElla5Q24YdkSgzIwRN');
+
+
+        stripe.createToken('bank_account', {
+            country: 'US',
+            currency: 'usd',
+            routing_number: '110000000',
+            account_number: '000123456789',
+            account_holder_name: 'Jenny Rosen',
+            account_holder_type: 'individual',
+        }).then(function(result) {
+            // Handle result.error or result.token
+            alert();
+            console.log(result);
+        });
     </script>
 {% endblock %}

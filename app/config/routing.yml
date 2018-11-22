@@ -1,3 +1,7 @@
+stripe:
+    resource: "@StripeBundle/Resources/config/routing.yml"
+    prefix:   /
+
 apuestas:
     resource: "@ApuestasBundle/Resources/config/routing.yml"
     prefix:   /

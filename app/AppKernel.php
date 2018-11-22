@@ -23,6 +23,7 @@ class AppKernel extends Kernel
             new ModelosBundle\ModelosBundle(),
             new NoticiasBundle\NoticiasBundle(),
             new ApuestasBundle\ApuestasBundle(),
+            new StripeBundle\StripeBundle(),
         ];
 
         if (in_array($this->getEnvironment(), ['dev', 'test'], true)) {

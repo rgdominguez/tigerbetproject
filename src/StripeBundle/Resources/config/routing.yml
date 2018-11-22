@@ -1,0 +1,3 @@
+stripe_homepage:
+    path:     /
+    defaults: { _controller: StripeBundle:Default:index }
