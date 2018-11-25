@@ -1,0 +1,93 @@
+<section id="grid-casino" class="grid-casino">
+    <div class="wrapper">
+        <div class="explicacion">
+            <h3 class="align-centrado">INSTRUCCIONES DEL JUEGO</h3>
+            <br>
+
+            <p class="align-centrado">En la casilla disponible, se acumulan los puntos totales que tienes actualmente. Puedes apostar la cantidad que quieras siempre que ésta sea menor al disponible de tu cuenta. En caso de tener saldo negativo, tendrás que hacer un nuevo ingreso en tu cuenta en la sessión <a href="/micuenta">mi cuenta</a>.</p>
+            <br>  <br>
+
+            <h3>PREMIOS</h3>
+            <br>
+            <p class="align-centrado">
+                Consigue la siete y media, es decir, que el valor de todas las cartas sume siete puntos y medio o bien se acerque el máximo a este valor sin pasarse. La banca juega y su jugada ha de superar o igualar la de cada uno de ellos. En caso de empate, la banca gana.
+            </p>
+            <br>
+            <p class="align-centrado">En caso de ganar, ganas el doble de lo apostado.</p>
+
+        </div>
+
+
+        <div class="casino casino-sieteymedio">
+            <div class="wrapper">
+
+                <div class="juego">
+                    <div class="muestra-cartas">
+                        <div class="baraja">
+                            <h3 id="saca-cartas-h3">SACA CARTA</h3>
+                            <figure id="mazo-trasera">
+                                <img src="{{ asset('img/trasera.jpg') }}" alt="trasera.jpg">
+                            </figure>
+                        </div>
+                        <div class="baraja">
+                            <figure id="mazo-delantera">
+                                <img src="{{ asset('img/trasera.jpg') }}" alt="trasera.jpg">
+                            </figure>
+                        </div>
+                        <div class="baraja">
+                            <h3 id="banca_h3">BANCA: </h3>
+                            </figure>
+                        </div>
+                    </div>
+
+                    <br>
+                    <h3 class="jugada-h3">TU JUGADA</h3>
+                    <div class="jugada-usuario">
+                        <figure>
+                            <img src="{{ asset('img/trasera.jpg') }}" alt="trasera.jpg">
+                        </figure>
+                        <figure>
+                            <img src="{{ asset('img/trasera.jpg') }}" alt="trasera.jpg">
+                        </figure>
+                        <figure>
+                            <img src="{{ asset('img/trasera.jpg') }}" alt="trasera.jpg">
+                        </figure>
+                        <figure>
+                            <img src="{{ asset('img/trasera.jpg') }}" alt="trasera.jpg">
+                        </figure>
+                        <figure>
+                            <img src="{{ asset('img/trasera.jpg') }}" alt="trasera.jpg">
+                        </figure>
+                        <figure>
+                            <img src="{{ asset('img/trasera.jpg') }}" alt="trasera.jpg">
+                        </figure>
+                    </div>
+
+                </div>
+                <div class="jugada flex">
+                    <form action="" name="contacto" method="POST" class="flex">
+
+                        <div class="fields">
+
+                            <div class="field">
+                                <label class="align-centrado small" for="disponible"><strong>Disponible</strong></label>
+                                <input type="text" id="disponible" value="{{ saldo }}" disabled>
+                            </div>
+
+                            <div class="field">
+                                <label class="align-centrado small" for="disponible"><strong>Tu jugada</strong></label>
+                                <input id="apuesta-amount" type="text" value="0">
+                            </div>
+                            <input type="hidden" id="username_tg" value="{{ username }}">
+                            <input type="hidden" id="usermail_tg" value="{{ usermail }}">
+                        </div>
+                        <p class="align-centrado" id="res_text"></p>
+                        <p class="align-centrado small"><span class="small">Comienza a jugar</span></p>
+                        <button id="play">JUGAR</button>
+                        <button id="plantarse">PLANTARSE</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

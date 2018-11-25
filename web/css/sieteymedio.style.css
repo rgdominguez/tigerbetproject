@@ -1,0 +1,53 @@
+.casino-sieteymedio{
+    background-image: url(../img/bgcartas.jpg);
+    background-size: 100% 100%;
+    background-origin: 50% 50%;
+    background-repeat: no-repeat;
+}
+
+.casino.casino-sieteymedio h3{
+    padding: 15px 0px;}
+.jugada-h3{text-align: left;}
+
+.muestra-cartas{width: 100%; overflow: hidden; display: flex; flex-direction: row;}
+.muestra-cartas .baraja{ margin: 0.5%}
+.muestra-cartas .baraja:nth-child(1){width: 25%;}
+.muestra-cartas .baraja:nth-child(2){width: 25%;}
+.muestra-cartas .baraja:nth-child(3){width: 45%;}
+.muestra-cartas .baraja:nth-child(1){position: relative; cursor: pointer;}
+.muestra-cartas .baraja:nth-child(1):hover h3#saca-cartas-h3{color: orange;}
+h3#saca-cartas-h3 {
+    position: absolute;
+    top: 20%;
+    color: white;
+    text-shadow: 4px 1px 3px rgba(0,0,0,1);
+    transition: all 230ms ease-in-out;
+}
+#plantarse{
+    pointer-events: none;
+    background: rgb(211, 211, 211);
+}
+.jugada-usuario img{opacity: 0;}
+
+.muestra-cartas .baraja:nth-child(2){opacity: 0;}
+/*.baraja{width: 19%;}*/
+.jugada-usuario{ width: 100%; display: flex;flex-direction: row;flex-wrap: wrap;}
+.jugada-usuario figure{ width: 15%; box-sizing: border-box; margin-right: 2px;}
+/*Formulario*/
+.casino form{  width: 100%;}
+.casino form .fields{ display: flex; width: 100%; }
+.casino form .fields .field{ width: 50%; margin: 5px; box-sizing: border-box; }
+.casino form .fields .field input{ width: 100%; text-align: center; height:83px; font-size: 50px }
+
+.jugar_disabled{pointer-events: none; background: #d3d3d3}
+form .small{display: none;}
+.casino .wrapper .jugada{align-items: center;}
+.casino form{
+    flex-direction: column;
+}
+
+@media (max-width: 700px) {
+    .casino-tragaperras{padding: 30px; box-sizing: border-box;}
+    .casino .wrapper{flex-direction: column !important;}
+    .casino .wrapper .juego, .casino .wrapper .jugada{ width: 100%;}
+}

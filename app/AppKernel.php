@@ -24,6 +24,7 @@ class AppKernel extends Kernel
             new NoticiasBundle\NoticiasBundle(),
             new ApuestasBundle\ApuestasBundle(),
             new StripeBundle\StripeBundle(),
+
         ];
 
         if (in_array($this->getEnvironment(), ['dev', 'test'], true)) {

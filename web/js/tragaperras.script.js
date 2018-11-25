@@ -6,9 +6,11 @@
     let jugar;
     let disponible = 0;
     let url = 'http://localhost:8000/img/';
+
     let slots_1 = ['cereza', 'naranja', 'ciruela', 'campana', 'bar', 'siete'];
-    let slots_2 = ['cereza', 'naranja', 'ciruela', 'campana', 'bar', 'siete'];
-    let slots_3 = ['cereza', 'naranja', 'ciruela', 'campana', 'bar', 'siete'];
+    let slots_2 = ['bar', 'naranja', 'siete', 'campana', 'cereza', 'ciruela'];
+    let slots_3 = ['naranja', 'ciruela', 'bar', 'campana', 'cereza', 'siete'];
+
     let giro1, giro2;
     let number = 0;
     let vueltas = 0;
@@ -30,24 +32,19 @@
             {'slot': slotsimg[2].alt}
         ];
 
-        /*
-        Limón y naranja: 0 puntos
-        Ciruelas: 1 puntos
-        Cerezas: 2 puntos
-        Estrella: 1 puntos
-        Dos sietes: 15 puntos
-        Dos campanas: 20 puntos
-        Bar: Comodín
-         */
-
-        console.log(premiados);
-
         premiados.map(function(elemento){
-            if('ciruela' == elemento['slot'] || 'estrella' == elemento['slot']){
-                acumulado+=1;
+            //SIMPLES
+            if('naranja' == elemento['slot']){
+                naranjas+=1;
+                acumulado = 0;
+            }
+            if('ciruela' == elemento['slot']){
+                ciruelas+=1;
+                acumulado+= ciruelas;
             }
             if('cereza' == elemento['slot']){
-                acumulado+=2;
+                cerezas+=1;
+                acumulado+= cerezas*5;
             }
             if('siete' == elemento['slot']){
                 sietes+=1;
@@ -55,28 +52,25 @@
             if('campana' == elemento['slot']){
                 campanas+=1;
             }
-            if('cereza' == elemento['slot']){
-                cerezas+=1;
-            }
             if('bar' == elemento['slot']){
                 bares+=1;
             }
         });
 
-        alert(acumulado);
-
         //dobles y triples
         if(sietes == 2 ||(sietes==1 && bares==1)){ acumulado+=15;}
         if(campanas == 2 || (campanas==1 && bares==1)){ acumulado+=20;}
-        if(naranjas == 3 || ciruelas==3 || (naranjas==2 && bares==1) || (ciruelas==2 && bares==1)){ acumulado+=50;}
-        if(cerezas == 3 || (cerezas==2 && bares==1)){ acumulado+=100;}
-        if(campanas == 3){ acumulado+=80;}
-        if(bares == 3){ acumulado+=100;}
+        if(naranjas == 3  || (naranjas==2 && bares==1) ||(naranjas==1 && bares==2)){ acumulado+=50;}
+        if(ciruelas==3 || (ciruelas==2 && bares==1) ||(ciruelas==1 && bares==2)){ acumulado+=(50);}
+        if(cerezas == 3 || (cerezas==2 && bares==1)){ acumulado+=(50 + 3*5);}
+        if(campanas == 3 || (campanas==2 && bares==1) ||(campanas==1 && bares==2)) { acumulado=100;}
+        if(sietes == 3 || (sietes==2 && bares==1) || (sietes==1 && bares==2)){ acumulado=200;}
+        if(bares == 3){ acumulado=300;}
         disponible.value = parseInt(acumulado)+parseInt(disponible.value);
 
         if(acumulado>0) {
             swal({title: "PREMIO",text: "Ganas: " + acumulado + 'puntos.',icon: "success",button: "Cerrar",})
-            actualizarResultados(acumulado);
+            actualizarResultados(parseInt(acumulado) + parseInt(apuesta));
         }
         acumulado = 0;
     }
@@ -154,8 +148,9 @@
             'juego': j[jlength-1]
         };
 
+        apuesta = parseInt(player.apuesta);
+
         if(validarApuesta(player)){
-            //desactiva el botón
             jugar.style.pointerEvents = 'none';
             jugar.style.backgroundColor = '#d3d3d3';
             insertarApuesta(player);
@@ -163,7 +158,6 @@
     }
 
     function girarRuleta () {
-        //desactiva el botón
         jugar.style.pointerEvents = 'none';
         jugar.style.backgroundColor = '#d3d3d3';
 

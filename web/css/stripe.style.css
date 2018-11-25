@@ -1,0 +1,8 @@
+.flex{display: flex; margin:20px 0px; box-sizing: border-box}
+.flex .col1-50{text-align: center;}
+.flex div:nth-child(2){ padding: 0px 30px; box-sizing: border-box}
+.stripe-button-el {
+    width: 40%;
+    margin: 0 auto;
+    background: #0088CC;
+}

@@ -16,5 +16,7 @@ class DefaultController extends Controller
             'source' => 'tok_visa',
             'receipt_email' => 'jenny.rosen@example.com',
         ]);
+
+        return $this->redirect('/inicio');
     }
 }

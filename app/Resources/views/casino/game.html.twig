@@ -22,6 +22,8 @@
                 </div>
                 {% if slug == 'tragaperras' %}
                     {% include 'casino/tragaperras.html.twig' %}
+                {% elseif slug == '7 y medio' %}
+                    {% include 'casino/sieteymedio.html.twig' %}
                 {% else %}
                     {% include 'casino/otrosjuegos.html.twig' %}
                 {% endif %}
@@ -38,13 +40,21 @@
 {% block stylesheets %}
     <link rel="stylesheet" href="{{ asset('css/custom-blog.style.css') }}">
     <link rel="stylesheet" href="{{ asset('css/casino.style.css') }}">
+    {% if slug == 'tragaperras' %}
     <link rel="stylesheet" href="{{ asset('css/tragaperras.style.css') }}">
+    {% elseif slug=="7 y medio" %}
+    <link rel="stylesheet" href="{{ asset('css/sieteymedio.style.css') }}">
+    {% else %}
+    {% endif %}
 {% endblock %}
 
 {% block javascripts %}
     {% if slug == 'tragaperras' %}
     <script type="text/javascript" src="{{ asset('js/tragaperras.script.js') }}">
     </script>
-    {% else %}
+    {% elseif slug=="7 y medio"%}
+        <script type="text/javascript" src="{{ asset('js/sieteymedio.script.js') }}">
+        </script>
+        {% else %}
     {% endif %}
 {% endblock %}

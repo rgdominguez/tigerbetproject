@@ -32,37 +32,12 @@
 </div>
 
 {% block stylesheets %}
-    <style>
-        .flex{display: flex; margin:20px 0px; box-sizing: border-box}
-        .flex .col1-50{text-align: center;}
-        .flex div:nth-child(2){ padding: 0px 30px; box-sizing: border-box}
-        .stripe-button-el {
-            width: 40%;
-            margin: 0 auto;
-            background: #0088CC;
-        }
-
-    </style>
+    <link rel="stylesheet" href="{{ asset('css/stripe.style.css') }}">
 {% endblock %}
 
 
 {% block javascripts %}
     <script src="https://js.stripe.com/v3/"></script>
-    <script>
-        var stripe = Stripe('pk_test_y28iaWElla5Q24YdkSgzIwRN');
-
-        //https://adrianalonso.es/desarrollo-web/backend/stripe-pagos-online-desde-web-y-movil/
-        stripe.createToken('bank_account', {
-            country: 'US',
-            currency: 'usd',
-            routing_number: '110000000',
-            account_number: '000123456789',
-            account_holder_name: 'Jenny Rosen',
-            account_holder_type: 'individual',
-        }).then(function(result) {
-            // Handle result.error or result.token
-            alert();
-            console.log(result);
-        });
+    <script src="{{ asset('js/stripe.script.js') }}">
     </script>
 {% endblock %}

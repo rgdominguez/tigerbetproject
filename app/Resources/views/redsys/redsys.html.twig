@@ -24,38 +24,21 @@
                 <section id="grid-casino" class="grid-casino">
                     <div class="wrapper">
                         <br><br>
-                        <h3>INGRESO SEGURO REDSYS</h3>
+                        <h3>INGRESO SEGURO STRIPE</h3>
                         <br>
                         <h5>
-                            REDSYS es sin duda el TPV más utilizado en España porque es el ofrecido por casi todos los bancos y muchas cajas de ahorros: BBVA, La Caixa, Bankia, Banco Sabadell, Catalunya Bank, Banco Santander, Banco Popular, Deutsche Bank, Barclays Bank...
+                            STRIPE es sin duda el TPV más utilizado en España porque es el ofrecido por casi todos los bancos y muchas cajas de ahorros: BBVA, La Caixa, Bankia, Banco Sabadell, Catalunya Bank, Banco Santander, Banco Popular, Deutsche Bank, Barclays Bank...
                         </h5>
                         <h5>
-                            REDSYS ofrece una solución segura, flexible y fiable para el procesamiento de los pagos en comercios
+                            STRIPE ofrece una solución segura, flexible y fiable para el procesamiento de los pagos en comercios
                         </h5>
                         <br><br>
-                        <form id="fredsys" name="fredsys" action="" method="post">
-                            <div class="field">
-                                <label for="cantidad"></label>
-                                <input id="cantidad" type="text" placeholder="Cantidad">
-                                <p class="small error"></p>
-                            </div>
 
-                            <div class="field">
-                                <label for="factura"></label>
-                                <input id="factura" type="text" placeholder="Factura" disabled>
-                                <p class="small error"></p>
-                            </div>
 
-                            <div class="field">
-                                <label for="concepto"></label>
-                                <input id="concepto" type="text" value="Ingreso saldo TIGERBET" placeholder="Concepto"disabled>
-                                <p class="small error"></p>
-                            </div>
-
-                            <input id="submit-redsys" type="submit" class="button" value="ENVIAR">
-                            <br><br>
-                            <p id="respuesta"></p>
-                        </form>
+                        <div id="payment-request-button">
+                            <!-- A Stripe Element will be inserted here. -->
+                        </div>
+                        
                     </div>
                 </section>
             </div>
@@ -74,6 +57,5 @@
 {% endblock %}
 
 {% block javascripts %}
-    <script type="text/javascript" src="{{ asset('js/redsys.script.js') }}">
-    </script>
+    <script src="https://js.stripe.com/v3/"></script>
 {% endblock %}
